@@ -4,11 +4,13 @@
   "description": "case study - on demand car wash",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "deploy": "serverless deploy"
   },
   "author": "Krishna Madani",
   "license": "ISC",
   "dependencies": {
+    "aws-serverless-express": "^3.4.0",
     "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
@@ -25,6 +27,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.6",
     "razorpay": "^2.0.6",
+    "serverless": "^2.18.0",
     "validator": "^13.5.2"
   },
   "devDependencies": {

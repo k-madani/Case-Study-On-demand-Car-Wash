@@ -13,7 +13,7 @@ const Washer=require('../models/washer');
 
 /*USER */
 //user registration route 
-router.post('/register',function(req,res,next){
+router.post('/user-register',function(req,res,next){
     let user=new User();
     //assign values from user
     user.name=req.body.name;
@@ -120,7 +120,7 @@ router.delete('/deleteusers/:id',function(req,res,next){
 
 /*Washer*/
 //washer registration route 
-router.post('/washer',function(req,res,next){
+router.post('/washer-register',function(req,res,next){
     let washer=new Washer();
     //assign values from user
     washer.name=req.body.name;
@@ -229,7 +229,7 @@ router.delete('/deletewashers/:id',function(req,res,next){
 
 
 /*Admin*/
-router.post('/admin',function(req,res,next){
+router.post('/admin-register',function(req,res,next){
     let admin=new Admin();
     //assign values from user
     admin.name=req.body.name;
